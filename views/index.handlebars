@@ -1,0 +1,40 @@
+<div class="row">
+  <i class="fas fa-hamburger fa-4x" id="icon"></i>
+  <div class="col-md-12"><h1 class="text-center">Eat-Da-Burger</h1></div>
+<div class="col-md-4">  
+  
+
+  <h2 class="text-center">Burgers</h2>
+
+  <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+<div class="col-md-4">
+<h2 class="text-center">Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group text-center">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="burger_name">
+  </div>
+
+  <button type="submit" class="btn btn-primary center-block" id="addbtn">Add Burger</button>
+</form>
+</div>
+<div class="col-md-4">
+<h2 class="text-center">Devour Burgers!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+</div>
+</div>

@@ -1,0 +1,40 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+#body{
+  background-color: rgb(241, 182, 232);
+}
+#addbtn{
+  margin-left: 150px;
+  margin-top: 10px;
+}
+#icon{
+  margin-left: 50%;
+  margin-top: 10px;
+}
+.col-md-4{
+  margin-top: 30px;
+}
+.col-md-12{
+  margin-top: 50px;
+}
+i{
+    cursor: pointer;
+    
+}
